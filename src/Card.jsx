@@ -6,12 +6,12 @@ import bubbles from './assets/pictures/bubbles background.png'
         Attack cards: blue
  */
 
-function Card() {
+function Card(props) {
     return (
         <div className="card">
             <img src={bubbles} className="cardImage" alt="bubbles"></img> {/* Not sure if I want images; we plan on implementing 3D models, but images might still be useful */}
-            <h2 className="cardTitle">&lt;Name of card will go here&gt;</h2>
-            <p>&lt;Some brief information about the card!&gt;</p>
+            <h2 className="cardTitle">{props.cardName}</h2>
+            <p>{props.cardDescription}</p>
         </div>
     );
 }

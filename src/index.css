@@ -1,17 +1,24 @@
 body {
+  background-image: url('./assets/pictures/dungeon background.png')
+}
+
+#grid-pattern {
   background: 
-    linear-gradient(to right, #000 1px, transparent 1px) 0 0, /* Vertical lines */
-    linear-gradient(to bottom, #000 1px, transparent 1px) 0 0; /* Horizontal lines */
-  background-size: 100px 100px; /* Size of each square */
+    linear-gradient(to right, #000 2px, transparent 1px) 0 0, /* Vertical lines */
+    linear-gradient(to bottom, #000 2px, transparent 1px) 0 0; /* Horizontal lines */
+  /* background-image: url('./assets/pictures/dungeon background.png'); */
+  background-size: 125px 125px; /* Size of each square */
   background-repeat: repeat; /* Repeats forever */
   margin: 0;
   height: 100vh; /* Ensure the background covers the full viewport height */
+}
 
 .card {
-  border: 1 px solid black;
+  border: 1 px solid black; 
+  background-color: lightblue;
   border-radius: 10px;
   box-shadow: 5px 5px 5px;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   text-align: center;
   max-width: 250px;
@@ -19,7 +26,7 @@ body {
 }
 
 .card .cardImage {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 50%
 }
