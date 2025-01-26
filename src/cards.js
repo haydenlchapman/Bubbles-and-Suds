@@ -1,14 +1,62 @@
+// GIVE EACH CARD AN IMAGE!!!
 
-const deckCards = [
+// The contents of a deck. 
+export const deck = [
     {cardName: "Business Bub", attack: 3, defense: 3},
     {cardName: "Swole Foam", attack: 5, defense: 1},
     {cardName: "Sudsey Supreme", attack: 1, defense: 5},
     {cardName: "Bubbly Bud", attack: 4, defense: 2},
-    {cardName: "Soap of the Siren", attack: 2, defense: 4}
+    {cardName: "Soap of the Siren", attack: 2, defense: 4},
+    {cardName: "Forward!"},
+    {cardName: "Backward!"},
+    {cardName: "Left!"},
+    {cardName: "Right!"},
+    {cardName: "Northeast!"},
+    {cardName: "Northwest!"},
+    {cardName: "Southeast!"},
+    {cardName: "Southwest!"},
+    {cardName: "Forward!"},
+    {cardName: "Backward!"},
+    {cardName: "Left!"},
+    {cardName: "Right!"},
+    {cardName: "Northeast!"},
+    {cardName: "Northwest!"},
+    {cardName: "Southeast!"},
+    {cardName: "Southwest!"},
+    {cardName: "Forward!"},
+    {cardName: "Backward!"},
+    {cardName: "Left!"},
+    {cardName: "Right!"},
+    {cardName: "Northeast!"},
+    {cardName: "Northwest!"},
+    {cardName: "Southeast!"},
+    {cardName: "Southwest!"},
+    {cardName: "Forward!"},
+    {cardName: "Backward!"},
+    {cardName: "Left!"},
+    {cardName: "Right!"},
+    {cardName: "Northeast!"},
+    {cardName: "Northwest!"},
+    {cardName: "Southeast!"},
+    {cardName: "Southwest!"},
+    {cardName: "Forward!"},
+    {cardName: "Backward!"},
+    {cardName: "Left!"},
+    {cardName: "Right!"},
+    {cardName: "Northeast!"},
+    {cardName: "Northwest!"},
+    {cardName: "Southeast!"},
+    {cardName: "Southwest!"}, {cardName: "Cloud Shield", defenseUp: 1},
+    {cardName: "Charm of Ice Arm", defenseUp: 2},
+    {cardName: "Crown of Psychic Armor", defenseUp: 3},
+    {cardName: "Hoard of Sentient Controllable Gnats", defenseUp: 1, attackUp: 1},
+    {cardName: "Long Sword of Asbestos", attackUp: 1},
+    {cardName: "Magic Blaster of Concentrated Soap", attackUp: 2},
+    {cardName: "Wand of the Ancient Ones’ Anger", attackUp: 3}
 ];
 
 // Hazards purely check defense. If defense is less than or equal to the attack of the hazard, the player dies.
-const hazards = [
+export const hazards = [
     {cardName: "Asbestos", attack: 1},
     {cardName: "Kicked up Dirt", attack: 1},
     {cardName: "Rocky Spikes", attack: 2},
@@ -24,7 +72,7 @@ const hazards = [
 
 /* Enemies attack players. If the player’s attack is equal to the enemy, then it is a draw and they don’t move. If it is less than the enemy then they die, and if it is
    greater than the enemy then they move on. */
-const enemies = [
+export const enemies = [
     {cardName: "House Fly", attack: 1},
     {cardName: "Collective of Sentient Bacteria", attack: 1},
     {cardName: "Mini Government Drones", attack: 2},
@@ -35,25 +83,4 @@ const enemies = [
     {cardName: "Government Attack Pigeons", attack: 4},
     {cardName: "Miniature Herald of the Flying Spaghetti Monster", attack: 5},
     {cardName: "Psychic Manifestation of Consciousness of the Universe", attack: 5}
-];
-
-const items = [
-    {cardName: "Cloud Shield", defenseUp: 1},
-    {cardName: "Charm of Ice Arm", defenseUp: 2},
-    {cardName: "Crown of Psychic Armor", defenseUp: 3},
-    {cardName: "Hoard of Sentient Controllable Gnats", defenseUp: 1, attackUp: 1},
-    {cardName: "Long Sword of Asbestos", attackUp: 1},
-    {cardName: "Magic Blaster of Concentrated Soap", attackUp: 2},
-    {cardName: "Wand of the Ancient Ones’ Anger", attackUp: 3}
-];
-
-const movementCards = [
-    {cardName: "Forward!"},
-    {cardName: "Backward!"},
-    {cardName: "Left!"},
-    {cardName: "Right!"},
-    {cardName: "Northeast!"},
-    {cardName: "Northwest!"},
-    {cardName: "Southeast!"},
-    {cardName: "Southwest!"}
 ];

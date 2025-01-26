@@ -1,4 +1,4 @@
-body {
+#app {
   background-image: url('./assets/pictures/dungeon background.png')
 }
 
@@ -23,14 +23,24 @@ body {
   text-align: center;
   max-width: 250px;
   display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.card .cardImage {
+#deck {
+  border: 1px solid black; 
+  background-color: red;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 250px;
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.cardImage {
   max-width: 80%;
   height: auto;
   border-radius: 50%
-}
-
-.card .cardTitle {
-  font-family: 'Courier New', Courier, monospace;
 }

@@ -9,3 +9,7 @@
     height: auto;
     width: auto; 
 }
+
+#drawButton {
+    background-color: red;
+}
