@@ -1,15 +1,47 @@
 #hand {
-    background-color: gainsboro;
     position: fixed;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    border: 2px solid black; /* consider getting rid of the border later */
-    margin: 0;
-    height: auto;
-    width: auto; 
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 10px; 
+    padding: 10px;
+    height: 30vh;
+    max-width: 100%; 
 }
 
 #drawButton {
-    background-color: red;
+    background-color: lightblue;
+    border-radius: 25%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    box-shadow: 3px 3px 3px;
+    font-weight: 700;
+    height: 7vh;
+    width: 10vh;
+    position: fixed;
 }
+
+#player {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100px; 
+}
+
+#stat-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .stat-item {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
